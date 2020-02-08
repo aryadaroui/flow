@@ -54,7 +54,13 @@ class Flow():
 
 		# LOOP lines
 		for line in self._lines:
-			canvas.stroke(pyx.path.line(line.x0, line.y0, line.x1, line.y1))
+			canvas.stroke(pyx.path.line(line.x0, line.y0, line.x1, line.y1), [pyx.deco.earrow([pyx.deco.stroked([pyx.color.rgb.black, pyx.style.linejoin.round]), pyx.deco.filled([pyx.color.rgb.black])], size=3)])
+
+
+
+		# 				canvas.stroke(pyx.path.line(line.x0, line.y0, line.x1, line.y1), [pyx.style.linewidth.THICK, pyx.style.linestyle.dashed, pyx.color.rgb.blue,
+        #   pyx.deco.earrow([pyx.deco.stroked([pyx.color.rgb.red, pyx.style.linejoin.round]),
+        #                pyx.deco.filled([pyx.color.rgb.green])], size=1)])
 
 
 		# LOOP process node attributes and place

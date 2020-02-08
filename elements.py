@@ -8,15 +8,24 @@ RECT = 'rect'
 CIRC = 'circ'
 TRI = 'tri'
 NONE = 'None'
+SOLID = 'solid'
+DOTTED = 'dotted'
+DASHED = 'dashed'
+
 GRAY = (0.5, 0.5, 0.5, 1.0)
 WHITE = (0.0, 0.0, 0.0, 1.0)
 BLACK = (1.0, 1.0, 1.0, 1.0)
 
-class Shape(Enum):
+class Shape():
 	SQUARE = SQUARE
 	RECT = RECT
 	CIRC = CIRC
 	TRI = TRI
+
+class Style():
+	SOLID = SOLID
+	DASHED = DASHED
+	DOTTED = DOTTED
 
 class Block:
 	def __init__(self, shape=SQUARE, tex=None):

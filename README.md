@@ -4,11 +4,8 @@ Flow is a python  module to easily develop publication quality signal flow diagr
 
 
 
-It is still in very early development. Proper documentation and implementation will follow soon.
 
-
-
-## To-do
+## To-do, if ever
 
 - [ ] `Series(fro, to)` or `Cascade` function
 - [ ] `Parallel(fro, to)`
